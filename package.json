@@ -5,6 +5,7 @@
   "author": "Myles Linder <myles.linder@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "types": "dist/types.d.ts",
   "source": "src/QueueOrchestrator.ts",
   "exports": {
     "require": "./dist/QueueOrchestrator.cjs",
