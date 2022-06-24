@@ -1,0 +1,30 @@
+{
+  "name": "queues-on-netlify",
+  "version": "0.0.1",
+  "repository": "git@github.com:myleslinder/queues-on-netlify.git",
+  "author": "Myles Linder <myles.linder@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "source": "src/QueueOrchestrator.ts",
+  "exports": {
+    "require": "./dist/QueueOrchestrator.cjs",
+    "default": "./dist/QueueOrchestrator.modern.js"
+  },
+  "main": "./dist/QueueOrchestrator.cjs",
+  "module": "./dist/QueueOrchestrator.module.js",
+  "unpkg": "./dist/QueueOrchestrator.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "@types/ms": "^0.7.31",
+    "@types/node": "^18.0.0",
+    "microbundle": "^0.15.0"
+  },
+  "dependencies": {
+    "@netlify/functions": "^1.0.0",
+    "ms": "^2.1.3",
+    "secure-webhooks": "^0.3.0"
+  }
+}
