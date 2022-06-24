@@ -14,6 +14,7 @@
   "module": "./dist/QueueOrchestrator.module.js",
   "unpkg": "./dist/QueueOrchestrator.umd.js",
   "scripts": {
+    "prepare": "yarn build",
     "build": "microbundle",
     "dev": "microbundle watch"
   },
